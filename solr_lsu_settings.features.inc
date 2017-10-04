@@ -32,15 +32,18 @@ function solr_lsu_settings_islandora_solr_fields_features_default_fields() {
     ),
   ),
   1 => array(
-    'solr_field' => 'dc.title',
+    'solr_field' => 'catch_all_fields_mt',
     'field_type' => 'search_fields',
     'weight' => -10,
     'solr_field_settings' => array(
-      'label' => 'Title',
+      'label' => 'All',
       'permissions' => array(
         1 => 1,
         2 => 2,
         3 => 3,
+        4 => 4,
+        5 => 5,
+        8 => 8,
       ),
     ),
   ),
@@ -76,11 +79,11 @@ function solr_lsu_settings_islandora_solr_fields_features_default_fields() {
     ),
   ),
   4 => array(
-    'solr_field' => 'dc.subject',
+    'solr_field' => 'dc.title',
     'field_type' => 'search_fields',
     'weight' => -9,
     'solr_field_settings' => array(
-      'label' => 'Subject',
+      'label' => 'Title',
       'permissions' => array(
         1 => 1,
         2 => 2,
@@ -146,11 +149,14 @@ function solr_lsu_settings_islandora_solr_fields_features_default_fields() {
     'field_type' => 'search_fields',
     'weight' => -8,
     'solr_field_settings' => array(
-      'label' => 'Name',
+      'label' => 'Creator',
       'permissions' => array(
         1 => 1,
         2 => 2,
         3 => 3,
+        4 => NULL,
+        5 => NULL,
+        8 => NULL,
       ),
     ),
   ),
@@ -193,6 +199,19 @@ function solr_lsu_settings_islandora_solr_fields_features_default_fields() {
     ),
   ),
   11 => array(
+    'solr_field' => 'dc.subject',
+    'field_type' => 'search_fields',
+    'weight' => -7,
+    'solr_field_settings' => array(
+      'label' => 'Subject',
+      'permissions' => array(
+        1 => 1,
+        2 => 2,
+        3 => 3,
+      ),
+    ),
+  ),
+  12 => array(
     'solr_field' => 'mods_originInfo_dateIssued_dt',
     'field_type' => 'sort_fields',
     'weight' => -7,
@@ -207,7 +226,7 @@ function solr_lsu_settings_islandora_solr_fields_features_default_fields() {
       ),
     ),
   ),
-  12 => array(
+  13 => array(
     'solr_field' => 'mods_originInfo_dateIssued_ms',
     'field_type' => 'result_fields',
     'weight' => -7,
@@ -229,7 +248,7 @@ function solr_lsu_settings_islandora_solr_fields_features_default_fields() {
       'link_to_search' => FALSE,
     ),
   ),
-  13 => array(
+  14 => array(
     'solr_field' => 'mods_originInfo_dateCreated_mdt',
     'field_type' => 'facet_fields',
     'weight' => -7,
@@ -255,7 +274,23 @@ function solr_lsu_settings_islandora_solr_fields_features_default_fields() {
       ),
     ),
   ),
-  14 => array(
+  15 => array(
+    'solr_field' => 'mods_subject_geographic_mt',
+    'field_type' => 'search_fields',
+    'weight' => -6,
+    'solr_field_settings' => array(
+      'label' => 'Location',
+      'permissions' => array(
+        1 => 1,
+        2 => 2,
+        3 => 3,
+        4 => 4,
+        5 => 5,
+        8 => 8,
+      ),
+    ),
+  ),
+  16 => array(
     'solr_field' => 'mods_name_personal_namePart_mlt',
     'field_type' => 'result_fields',
     'weight' => -6,
@@ -277,7 +312,7 @@ function solr_lsu_settings_islandora_solr_fields_features_default_fields() {
       'link_to_search' => FALSE,
     ),
   ),
-  15 => array(
+  17 => array(
     'solr_field' => 'mods_abstract_mt',
     'field_type' => 'result_fields',
     'weight' => -5,
@@ -297,6 +332,38 @@ function solr_lsu_settings_islandora_solr_fields_features_default_fields() {
       ),
       'link_to_object' => FALSE,
       'link_to_search' => FALSE,
+    ),
+  ),
+  18 => array(
+    'solr_field' => 'mods_typeOfResource_mt',
+    'field_type' => 'search_fields',
+    'weight' => 5,
+    'solr_field_settings' => array(
+      'label' => 'Type',
+      'permissions' => array(
+        1 => 1,
+        2 => 2,
+        3 => 3,
+        4 => 4,
+        5 => 5,
+        8 => 8,
+      ),
+    ),
+  ),
+  19 => array(
+    'solr_field' => 'dc.identifier',
+    'field_type' => 'search_fields',
+    'weight' => 6,
+    'solr_field_settings' => array(
+      'label' => 'Identifier',
+      'permissions' => array(
+        1 => 1,
+        2 => 2,
+        3 => 3,
+        4 => 4,
+        5 => 5,
+        8 => 8,
+      ),
     ),
   ),
 );
