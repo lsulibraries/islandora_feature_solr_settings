@@ -366,6 +366,22 @@ function solr_lsu_settings_islandora_solr_fields_features_default_fields() {
       ),
     ),
   ),
+  20 => array(
+    'solr_field' => 'dc.date',
+    'field_type' => 'search_fields',
+    'weight' => 7,
+    'solr_field_settings' => array(
+      'label' => 'Date',
+      'permissions' => array(
+        1 => 1,
+        2 => 2,
+        3 => 3,
+        4 => 4,
+        5 => 5,
+        8 => 8,
+      ),
+    ),
+  ),
 );
 }
 
