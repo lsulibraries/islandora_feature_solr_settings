@@ -263,6 +263,7 @@ function solr_lsu_settings_islandora_solr_fields_features_default_fields() {
       'date_filter_datepicker_enabled' => 1,
       'date_filter_datepicker_range' => '-100:+3',
       'range_facet_variable_gap' => NULL,
+      'range_facet_slider_enabled' => NULL,
       'pid_object_label' => NULL,
       'permissions' => array(
         1 => 1,
