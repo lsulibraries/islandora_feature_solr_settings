@@ -212,21 +212,6 @@ function solr_lsu_settings_islandora_solr_fields_features_default_fields() {
     ),
   ),
   12 => array(
-    'solr_field' => 'mods_originInfo_dateIssued_dt',
-    'field_type' => 'sort_fields',
-    'weight' => -7,
-    'solr_field_settings' => array(
-      'label' => 'Sort by date',
-      'permissions' => array(
-        1 => 1,
-        2 => 2,
-        3 => NULL,
-        4 => NULL,
-        5 => NULL,
-      ),
-    ),
-  ),
-  13 => array(
     'solr_field' => 'mods_originInfo_dateIssued_ms',
     'field_type' => 'result_fields',
     'weight' => -7,
@@ -248,7 +233,7 @@ function solr_lsu_settings_islandora_solr_fields_features_default_fields() {
       'link_to_search' => FALSE,
     ),
   ),
-  14 => array(
+  13 => array(
     'solr_field' => 'mods_originInfo_dateCreated_mdt',
     'field_type' => 'facet_fields',
     'weight' => -7,
@@ -276,7 +261,7 @@ function solr_lsu_settings_islandora_solr_fields_features_default_fields() {
       ),
     ),
   ),
-  15 => array(
+  14 => array(
     'solr_field' => 'mods_subject_geographic_mt',
     'field_type' => 'search_fields',
     'weight' => -6,
@@ -292,7 +277,7 @@ function solr_lsu_settings_islandora_solr_fields_features_default_fields() {
       ),
     ),
   ),
-  16 => array(
+  15 => array(
     'solr_field' => 'mods_name_personal_namePart_mlt',
     'field_type' => 'result_fields',
     'weight' => -6,
@@ -314,7 +299,7 @@ function solr_lsu_settings_islandora_solr_fields_features_default_fields() {
       'link_to_search' => FALSE,
     ),
   ),
-  17 => array(
+  16 => array(
     'solr_field' => 'mods_abstract_mt',
     'field_type' => 'result_fields',
     'weight' => -5,
@@ -334,6 +319,22 @@ function solr_lsu_settings_islandora_solr_fields_features_default_fields() {
       ),
       'link_to_object' => FALSE,
       'link_to_search' => FALSE,
+    ),
+  ),
+  17 => array(
+    'solr_field' => 'mods_originInfo_dateCreated_sort',
+    'field_type' => 'sort_fields',
+    'weight' => 2,
+    'solr_field_settings' => array(
+      'label' => 'Sort by date',
+      'permissions' => array(
+        1 => 1,
+        2 => 2,
+        3 => 3,
+        4 => 4,
+        5 => 5,
+        6 => 6,
+      ),
     ),
   ),
   18 => array(
